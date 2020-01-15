@@ -1,0 +1,327 @@
+body{
+    margin : 0;
+    padding: 0;
+    background-color: black;
+    font-family: 'Roboto', sans-serif;
+
+    .flex_row{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .flex_wrap{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .corps{
+        max-width: 1120px;
+        display: block;
+        margin: auto;
+    }
+
+    section{
+        margin: 8em 0;
+    }
+
+
+    p{
+        color: white;
+    }
+    
+    h2{
+        font-family: 'Montserrat', sans-serif;
+        letter-spacing: 6px;
+        color: white;
+        text-align: center;
+        margin: 2em 0;
+    }
+
+    h3{
+        font-family: 'Montserrat', sans-serif;
+        letter-spacing: 6px;
+        color: white;
+        text-align: center;
+    }
+
+    button {
+        background-color: white; /* Green */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        width: 100%
+      }
+    
+    button a{
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+    }
+
+    /****************************** header **************************************/
+    
+    header{
+        padding: 3em;
+    }
+
+    nav ul li a{
+        text-decoration: none;
+        color: white;
+    }
+
+    li{
+    list-style: none;
+    margin: 0 10px;
+    border: 1px solid rgba(255, 255, 255, 0);
+    padding: 10px;
+    text-align: center;
+    }
+
+    li:hover{
+    border: 1px solid;
+    border-radius: 4px;
+    border-color: white;
+    }
+
+    .logo{
+        height: 1.5em;
+    }
+
+    h2{
+        font-family: 'Montserrat', sans-serif;
+        letter-spacing: 6px;
+        color: white;
+        text-align: center;
+        margin: 2em 0;
+    }
+
+    h3{
+        font-family: 'Montserrat', sans-serif;
+        letter-spacing: 6px;
+        color: white;
+        text-align: center;
+    }
+
+    /*************footer**********************/
+
+    footer{
+        border-top: 1px solid white;
+        padding: 1em 20%;
+    }
+
+    footer h3{
+        text-align: left;
+    }
+  }
+
+
+    /******************************** Page Home ***********************************/
+
+    body.home{
+
+        h1{
+            text-align: center;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            color: white;
+            margin: 10px 0;
+            letter-spacing: 6px;
+            font-size: 70px;
+        }
+    /****** hero *****************************/
+
+    .background_img{
+        background-image: url("../img/jungle.jpg");
+        height: 650px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: 0;
+    }
+
+    .hero{
+        margin: 6em;   
+    }
+
+    .hero p{
+        color: white;
+        text-align: center;
+        width: 50%;
+        display: block;
+        margin: auto; 
+        font-weight: 100;
+       }
+    
+    /************** intro ********************/
+    .paragraphe{
+        width: 30%;
+        text-align: center;
+    }
+
+
+    /************** fiches ******************/
+
+    .fiches figure img{
+        width: 200px;
+    }
+
+    /************* mediaqueries *************/
+
+    @media only screen and (max-width: 700px) {
+        .intro{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .paragraphe{
+            width: 60%;
+        }
+
+        .hero p{
+            width: 90%;
+        }
+    }
+
+}
+
+/******** Page Fiche Gorilla ***********************************/
+
+body.fiche{
+
+    h1{
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    color: white;
+    margin: 60px 0;
+    letter-spacing: 6px;
+    font-size: 70px;
+    }
+
+    .fiches figure img{
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+
+    .fiches{
+        width: 30%;
+        min-width: 300px;
+    }
+
+    .fiches p{
+        text-align: center;
+    }
+}
+
+/******** Page Probocis ***********************************/
+
+body.probocis{
+
+    h1{
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 800;
+        color: white;
+        margin: 10px 0;
+        letter-spacing: 6px;
+        font-size: 70px;
+    }
+
+    .txt_img h2{
+        margin : 0;
+        font-size: 38px;
+        text-align: left;
+    }
+/****** hero *****************************/
+
+.background_img{
+    background-image: url("../img/monkeys.jpg");
+    height: 650px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+}
+
+.hero{
+    margin: 6em;   
+}
+
+.hero p{
+    color: white;
+    text-align: center;
+    width: 50%;
+    display: block;
+    margin: auto; 
+    font-weight: 100;
+   }
+
+   .explication img{
+       width : 70%;
+   }
+
+   .paragraphe{
+    width: 30%;
+    min-width: 330px;
+    margin: 1em;
+   }
+
+   .paragraphe_intro{
+    margin: 1.5em 0;
+    text-align: left;
+    width: 516px;
+
+   }
+
+   @media only screen and (max-width: 700px) {
+    .intro{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .intro img{
+        display: block;
+        margin: auto;
+        max-width: 500px;
+    }
+
+    .hero p{
+        width: 90%;
+    }
+
+
+    .paragraphe_intro{
+        text-align: center;
+        margin: 1em 1em;
+    }
+
+    .txt_img{
+        width : 90%;
+        margin-top: 3em;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    h1{
+        font-size: 36px;
+    }
+
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+
+    header ul{
+        padding: 0;
+    }
+
+}   
+
+}
+
