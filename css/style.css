@@ -101,6 +101,9 @@ body footer {
 body footer h3 {
   text-align: left;
 }
+.photojuliette img {
+  height: 100px;
+}
 /******************************** Page Home ***********************************/
 body.home {
   /****** hero *****************************/
@@ -119,13 +122,14 @@ body.home h1 {
 }
 body.home .background_img {
   background-image: url("images/jungle.jpg");
-  height: 650px;
+  height: 750px;
   background-size: cover;
   background-repeat: no-repeat;
   margin: 0;
 }
 body.home .hero {
   margin: 6em;
+  transform: translateX(-0%) translateY(+30%);
 }
 body.home .hero p {
   color: white;
@@ -169,23 +173,31 @@ body.fiche h1 {
   letter-spacing: 6px;
   font-size: 70px;
 }
-body.fiche .fiches figure img {
-  width: 100%;
-  display: block;
-  margin: auto;
+
+.fiche-parent {
+  justify-content: space-around;
 }
-body.fiche .fiches {
+ .fiches figure {
+  height: 300px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+ .fiches {
   width: 30%;
   min-width: 300px;
-}
-body.fiche .fiches p {
+  display: flex;
+  flex-direction: column;
   text-align: center;
 }
-/******** Page Probocis ***********************************/
-body.probocis {
+.fiches p {
+  text-align: center;
+}
+/******** Page Proboscis  ***********************************/
+body.Proboscis  {
   /****** hero *****************************/
 }
-body.probocis h1 {
+body.Proboscis  h1 {
   text-align: center;
   font-family: 'Montserrat', sans-serif;
   font-weight: 800;
@@ -194,22 +206,22 @@ body.probocis h1 {
   letter-spacing: 6px;
   font-size: 70px;
 }
-body.probocis .txt_img h2 {
+body.Proboscis  .txt_img h2 {
   margin: 0;
   font-size: 38px;
   text-align: left;
 }
-body.probocis .background_img {
-  background-image: url("img/monkeys.jpg");
+body.Proboscis  .background_img {
+  background-image: url("images/monkeys.jpg");
   height: 650px;
   background-size: cover;
   background-repeat: no-repeat;
   margin: 0;
 }
-body.probocis .hero {
+body.Proboscis  .hero {
   margin: 6em;
 }
-body.probocis .hero p {
+body.Proboscis  .hero p {
   color: white;
   text-align: center;
   width: 50%;
@@ -217,50 +229,50 @@ body.probocis .hero p {
   margin: auto;
   font-weight: 100;
 }
-body.probocis .explication img {
+body.Proboscis  .explication img {
   width: 70%;
 }
-body.probocis .paragraphe {
+body.Proboscis  .paragraphe {
   width: 30%;
   min-width: 330px;
   margin: 1em;
 }
-body.probocis .paragraphe_intro {
+body.Proboscis  .paragraphe_intro {
   margin: 1.5em 0;
   text-align: left;
   width: 516px;
 }
 @media only screen and (max-width: 700px) {
-  body.probocis .intro {
+  body.Proboscis  .intro {
     display: flex;
     flex-direction: column;
   }
-  body.probocis .intro img {
+  body.Proboscis  .intro img {
     display: block;
     margin: auto;
     max-width: 500px;
   }
-  body.probocis .hero p {
+  body.Proboscis  .hero p {
     width: 90%;
   }
-  body.probocis .paragraphe_intro {
+  body.Proboscis  .paragraphe_intro {
     text-align: center;
     margin: 1em 1em;
   }
-  body.probocis .txt_img {
+  body.Proboscis  .txt_img {
     width: 90%;
     margin-top: 3em;
   }
 }
 @media only screen and (max-width: 500px) {
-  body.probocis h1 {
+  body.Proboscis  h1 {
     font-size: 36px;
   }
-  body.probocis header {
+  body.Proboscis  header {
     display: flex;
     flex-direction: column;
   }
-  body.probocis header ul {
+  body.Proboscis  header ul {
 
   }
 }
@@ -431,4 +443,56 @@ ul li{
     background: none;
     color: white;
   }
+  .imagesinge{
+    object-fit: cover;
+    object-position: right;
+    width: 49vw;
+    height: 100vh;
+  }
+.flex_wrap{
+  column-count: 3;
+  column-gap: 40px;
+  column-width: 350px;
+  }
+  .span{
+    column-span: all;
+  }
+  .child{
+    background-color: Green;
+    border: 1em solid brown;
+    width: 4em;
+    transition: all 4s ease;
+  }
+  .parent:hover .child{
+    transform: rotate(720deg);
+    margin-left: 10em;
+    border-radius: 100%;
+  }
+}
+
+
+@media (max-width:1000px) {
+  body.Proboscis  .background_img {
+    background-image: url("images/gorilla.jpg");
+  }
+}
+@media (max-width:700px) {
+  body.Proboscis  .background_img {
+    background-image: url("images/gorilla2.jpg");
+  }
+}
+@media (max-width:500px) {
+  body.Proboscis  .background_img {
+    background-image: url("images/gorilla3.jpg");
+  }
+}
+
+.strip-image img{
+  height: 9em;
+  width: 100%;
+  object-fit: cover;
+}
+
+.marge{
+  margin-top: 50px;
 }
